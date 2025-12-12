@@ -1,0 +1,18 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+psycopg2-binary      # PostgreSQL
+SQLAlchemy
+alembic              # migrations
+
+# NLP / ML (start small, add more when needed)
+spacy
+scikit-learn
+sentence-transformers
+PyPdf2
+python-docx
+
+# optional utilities
+python-multipart     # for file uploads
+requests
