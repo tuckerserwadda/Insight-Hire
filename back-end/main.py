@@ -5,6 +5,7 @@ from xml.dom.minidom import Document
 from docx import Document
 from io import BytesIO
 from typing import List
+from routers.description import router as description_router
  
 insight_hire_app = FastAPI(title = 'InsightHire')
 
@@ -28,6 +29,10 @@ insight_hire_app.add_middleware(
 def api_check():
     return({'status': 200, 'message': 'The api is working correctly'})
 
+
+#include routers
+
+insight_hire_app.include_router(description_router)
 # upload file 
 
 TYPES_ALLOWED = [
